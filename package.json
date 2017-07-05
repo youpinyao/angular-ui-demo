@@ -28,7 +28,7 @@
     "angular-ui-router": "^0.3.2",
     "debounce": "1.0.2",
     "jquery": "^1.12.4",
-    "meetyou-angular-ui": "0.0.7",
+    "meetyou-angular-ui": "0.0.8",
     "moment": "2.18.1",
     "uuid": "3.0.1"
   },
