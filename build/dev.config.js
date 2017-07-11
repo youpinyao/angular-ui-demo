@@ -12,12 +12,12 @@ const config = require('./config/config.js');
 const dllCssPath = '.dll/vendor.dll.css';
 const assets = ['.dll/vendor.dll.js'];
 
-if (fs.existsSync(dllCssPath)) {
-  assets.push(dllCssPath);
-}
-
-module.exports = function () {
+module.exports = function() {
   const execCommonConfig = commonConfig(true);
+
+  if (fs.existsSync(dllCssPath)) {
+    assets.push(dllCssPath);
+  }
 
   return webpackMerge(execCommonConfig, {
     devtool: 'inline-source-map',
