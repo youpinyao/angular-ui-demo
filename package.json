@@ -6,8 +6,7 @@
   "scripts": {
     "build": "node ./build/webpack build",
     "start": "node ./build/webpack dev",
-    "dll": "node ./build/webpack dll",
-    "zip": "node ./build/webpack zip"
+    "dll": "node ./build/webpack dll"
   },
   "repository": {
     "type": "git",
@@ -29,15 +28,12 @@
     "angular-ui-router": "^0.3.2",
     "debounce": "1.0.2",
     "jquery": "^1.12.4",
-    "meetyou-angular-ui": "0.0.10",
+    "meetyou-angular-ui": "^0.0.14",
     "moment": "2.18.1",
     "uuid": "3.0.1"
   },
   "devDependencies": {
-    "angular2-template-loader": "0.6.2",
-    "archiver": "2.0.0",
     "autoprefixer": "6.7.7",
-    "awesome-typescript-loader": "3.1.2",
     "babel-core": "6.24.1",
     "babel-loader": "6.4.1",
     "babel-plugin-syntax-dynamic-import": "6.18.0",
@@ -77,6 +73,7 @@
     "progress-bar-webpack-plugin": "1.9.3",
     "resolve-url-loader": "2.0.2",
     "sass-loader": "6.0.3",
+    "sass-replace-webpack-plugin": "^1.0.2",
     "style-loader": "0.16.1",
     "to-string-loader": "1.1.5",
     "underscore": "1.8.3",

@@ -4,7 +4,6 @@ const WebpackDevServer = require('webpack-dev-server');
 const chalk = require('chalk');
 const util = require('./util/util.js');
 const config = require('./config/config.js');
-const zip = require('./util/zip.js');
 const opn = require('opn');
 
 const clearConsole = require('./util/clearConsole.js');

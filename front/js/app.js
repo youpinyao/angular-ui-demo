@@ -1,15 +1,13 @@
 import './vendor.js';
 
 import $ from 'jquery';
-import meetyou from 'meetyou-angular-ui';
-
 import '../scss/app.scss';
 
 import loginService from './services/loginService.js';
 import requestService from './services/requestService.js';
 
 const app = angular.module('app', [
-  meetyou,
+  'meetyou.angular',
   loginService,
   requestService,
   'ui.router',
