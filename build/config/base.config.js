@@ -52,7 +52,8 @@ module.exports = function(isDev) {
     },
     resolve: {
       extensions: ['.ts', '.js', '.json'],
-      modules: ['node_modules']
+      modules: ['node_modules'],
+      mainFields: ["browser", "module", "main"],
     },
     module: modules(isDev),
     plugins: getPlugins(isDev),
