@@ -73,7 +73,6 @@
     "progress-bar-webpack-plugin": "1.9.3",
     "resolve-url-loader": "2.0.2",
     "sass-loader": "6.0.3",
-    "sass-replace-webpack-plugin": "^1.0.2",
     "style-loader": "0.16.1",
     "to-string-loader": "1.1.5",
     "underscore": "1.8.3",
