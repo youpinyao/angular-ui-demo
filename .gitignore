@@ -12,3 +12,5 @@
 .svn/
 node_modules/
 .eslintcache
+
+dist/

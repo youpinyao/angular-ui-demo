@@ -10,6 +10,9 @@ module.exports = function () {
     entry: {
       // vendor: path.join(__dirname, '../../example/js/vendor.js')
     },
+    output: {
+      publicPath: config.publicPath,
+    },
     plugins: [
       new webpack.LoaderOptionsPlugin({
         minimize: false,

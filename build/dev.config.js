@@ -38,7 +38,7 @@ module.exports = function() {
       watchOptions: {
         poll: true
       },
-      publicPath: execCommonConfig.output.publicPath.split('..')[1],
+      publicPath: '/',
       compress: true, // Enable gzip compression for everything served:
       watchContentBase: false,
       // contentBase: [path.join(__dirname, '../views'), path.join(__dirname, '../.dll')],

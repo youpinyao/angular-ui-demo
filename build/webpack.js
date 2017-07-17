@@ -35,8 +35,6 @@ switch (type) {
     webpack(webpackConfig()).run((err, stats) => {
       if (runCallback(err, stats)) {
         console.log(chalk.green('\r\nbuild dist complete \r\n'));
-        // zip();
-
       }
     });
 
@@ -54,9 +52,6 @@ switch (type) {
         }
       });
     }
-    break;
-  case 'zip':
-    zip();
     break;
   default:
 }
