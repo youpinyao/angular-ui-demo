@@ -46,7 +46,7 @@ module.exports = function(isDev) {
     entry: util.entrys(isDev),
     output: {
       filename: `[name].[${hash}].js`,
-      publicPath: '../',
+      publicPath: './',
       path: path.resolve(__dirname, '../../', config.path, isDev ? '' : 'assets'),
       sourceMapFilename: `[name].[${hash}].map`
     },
