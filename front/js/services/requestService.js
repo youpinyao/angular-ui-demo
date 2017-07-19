@@ -115,7 +115,7 @@ function requestService($message, $q, $http, $timeout, $modal, loginService, $lo
           } else if (data.status === 404) {
             $message.danger('页面不存在');
           } else {
-            $message.danger(data || '未知错误');
+            // $message.danger(data || '未知错误');
           }
         }
 
