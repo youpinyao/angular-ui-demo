@@ -93,6 +93,8 @@ function routerRule($injector, $location) {
         count++;
       }
     });
+
+    return count >= url1.length;
   }
 
   while (toState && hasRouters(toState.routers)) {
