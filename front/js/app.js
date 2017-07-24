@@ -102,6 +102,10 @@ function routerRule($injector, $location) {
     toUrl += toState.url;
   }
 
+  if (toUrl && toState && toUrl === path) {
+    toUrl = setParams(toUrl, toState.params || {});
+  }
+
   if (toUrl && !sameUrl(toUrl, path)) {
     return toUrl;
   }
@@ -111,6 +115,23 @@ function routerRule($injector, $location) {
   }
 
   return undefined;
+}
+
+function setParams(url, params) {
+  if (angular.isNull(url)) {
+    return url;
+  }
+
+  url = url.split('/');
+
+  angular.each(url, (d, i) => {
+    if (/:/g.test(d)) {
+      url[i] = params[d.split(':')[1]] || '';
+    }
+  });
+  url = url.join('/');
+
+  return url;
 }
 
 function flattenRouter(routers, level, parent) {
