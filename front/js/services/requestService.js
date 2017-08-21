@@ -76,9 +76,9 @@ function requestService($message, $q, $http, $timeout, $modal, loginService, $lo
         cache: config.method == 'GET' ? cache : false
       }).then(function(data) {
         if (el) {
-          $timeout(function() {
-            $(el).removeClass('disabled-http-request');
-          }, 300);
+          // $timeout(function() {
+          $(el).removeClass('disabled-http-request');
+          // }, 300);
         }
 
         if (loadingShow) {
@@ -90,9 +90,9 @@ function requestService($message, $q, $http, $timeout, $modal, loginService, $lo
         deferred.resolve(data.data);
       }, function(data) {
         if (el) {
-          $timeout(function() {
-            $(el).removeClass('disabled-http-request');
-          }, 300);
+          // $timeout(function() {
+          $(el).removeClass('disabled-http-request');
+          // }, 300);
         }
 
         if (loadingShow) {
