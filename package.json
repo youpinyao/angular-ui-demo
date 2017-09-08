@@ -4,7 +4,9 @@
   "description": "meeyou-angular-ui demo",
   "main": "index.js",
   "scripts": {
+    "prebuild": "npm i && npm update",
     "build": "node ./build/webpack build",
+    "prestart": "npm i && npm update",
     "start": "node ./build/webpack dev",
     "dll": "node ./build/webpack dll"
   },
@@ -28,7 +30,7 @@
     "angular-ui-router": "^0.3.2",
     "debounce": "1.0.2",
     "jquery": "^1.12.4",
-    "meetyou-angular-ui": "^0.0.15",
+    "meetyou-angular-ui": "*",
     "moment": "2.18.1",
     "uuid": "3.0.1"
   },
