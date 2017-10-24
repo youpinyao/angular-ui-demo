@@ -4,9 +4,7 @@
   "description": "meeyou-angular-ui demo",
   "main": "index.js",
   "scripts": {
-    "prebuild": "npm i && npm update",
     "build": "node ./build/webpack build",
-    "prestart": "npm i && npm update",
     "start": "node ./build/webpack dev",
     "dll": "node ./build/webpack dll"
   },
